@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("fonts/SF-Pro-Display.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "New York Small";
+  src: url("../fonts/NewYorkSmall-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("fonts/SF-Mono-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Body */
+body {
+  background: white;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+  height: 125px;
+}
+
+.header .main-content {
+  display: flex;
+  align-items: center;
+  max-width: 1350px;
+  width: 100%;
+  min-height: 40px;
+  margin: 53px auto 0;
+  padding: 0 10px;
+}
+
+.logo .img {
+  width: 100%;
+  max-width: 395px;
+  margin: 76px auto 0;
+  display: block;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+.nav a {
+  display: block;
+  width: auto;
+  text-decoration: none;
+  margin: 15px 0 0 15px; /* Top: 10px, Right: 0, Bottom: 0, Left: 15px */
+  height: 33px;
+  font-family: "New York Small", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 85px;
+  font-weight: 600;
+}
+
+/* Banner */
+
+.banner-img {
+  max-width: 854px;
+  width: 100%;
+  margin: 76px auto 0;
+  display: block;
+}
+
+.banner-title {
+  width: 100%;
+  margin: 44px auto 20px;
+  display: block;
+  max-width: 858px;
+  font-family: "New York Extra Large", serif;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1; /* 100% tương đương 1 */
+  text-align: center;
+}
+
+.banner-subtitle {
+  max-width: 592px;
+  width: 100%;
+  margin: 32px auto 0;
+  font-family: "SF Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Divider */
+.divider {
+  max-width: 640px;
+  width: 100%;
+  border: none;
+  border-top: 2px solid black;
+  margin: 34px auto 0;
+}
+
+/* Articles */
+.articles-tit {
+  max-width: 225px;
+  width: 100%;
+  height: 53px;
+  margin: 62px auto 39px;
+  font-family: "New York Extra Large";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.articles {
+  text-align: center;
+  margin-bottom: 113px;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 28px;
+  justify-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 680px;
+  padding: 0 16px;
+}
+
+/* Thẻ bài viết */
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 304px;
+}
+
+/* Ảnh bài viết */
+.article-card img {
+  width: 304px;
+  height: 176px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption bài viết */
+.article-caption {
+  margin-top: 24px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 262px;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 464px;
+
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+  padding: 16px 0 32px;
+}
+.footer-top .footer-img-desktop {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  padding-bottom: 105px;
+}
+
+.footerlogo {
+  width: 290px;
+}
+
+.footer-middle .footer-text {
+  max-width: 488px;
+  width: 100%;
+  margin: 20px auto 0;
+  font-family: "New York Small", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+  height: auto;
+}
+
+.footer-middle .social-links {
+  margin: 50px auto 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+}
+
+.footer-middle .social-links a {
+  color: #fff;
+  font-family: SF Pro Text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+
+  text-decoration-thickness: 0%;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.footer-top .footer-img-desktop {
+  display: block;
+}
+
+.footer-top .footer-img-mobile {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 125px;
+    right: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top .footer-img-desktop {
+    display: none;
+  }
+
+  .footer-top .footer-img-mobile {
+    display: block;
+    width: 467px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .footer-top {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .footerlogo {
+    width: 236px;
+  }
+
+  .footer-middle .footer-text {
+    max-width: 287px;
+    font-family: New York Small;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .footer-middle .social-links a {
+    font-size: 13px;
+  }
+}

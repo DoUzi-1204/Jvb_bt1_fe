@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "New York Extra Large";
+  src: url("../fonts/NewYorkExtraLarge-Regular.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body.readme {
+  font-family: "SF Pro Text", system-ui, sans-serif;
+  margin: 0;
+  padding-bottom: 302px;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  overflow-x: auto;
+  min-width: 1523px;
+}
+
+.header {
+  background-color: #ffd900;
+  width: 1523px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .version {
+  position: absolute;
+  top: 65px;
+  left: 140px;
+  width: 322px;
+  height: 24px;
+  font-family: "SF Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+}
+
+.header .title {
+  position: absolute;
+  top: 79px;
+  left: 131px;
+  width: 829px;
+  height: 239px;
+  font-family: "New York Extra Large", serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 1;
+  color: #000;
+  margin: 0;
+}
+
+.section {
+  font-family: "New York Extra Large", serif;
+  margin-top: 90px;
+  margin-bottom: 26px;
+  font-size: 44px;
+  line-height: 1;
+  margin-left: 131px;
+  font-weight: 700;
+}
+
+.content {
+  border-left: 6px solid black;
+  padding-left: 26px;
+  margin-left: 135px;
+  width: 875px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.font {
+  margin-top: 58px;
+  margin-bottom: 13px;
+}

@@ -273,6 +273,10 @@ nav {
     margin-left: auto;
   }
 
+  .menu {
+    display: none;
+  }
+
   .nav {
     display: none;
     flex-direction: column;

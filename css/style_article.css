@@ -1,0 +1,915 @@
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+
+@font-face {
+  font-family: "New York Small";
+  src: url("../fonts/NewYorkSmall-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+/* Font */
+
+.body {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+}
+
+/* Body */
+body {
+  overflow-x: hidden;
+  background: white;
+}
+
+/* -------------------Header ----------------*/
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 134px;
+  position: relative;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 63px;
+  height: 134px;
+}
+
+.header .logo .logoheader {
+  width: 390px;
+  height: 37.53px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  margin: 0px 0 0 33px; /* Top: 10px, Right: 0, Bottom: 0, Left: 15px */
+  height: 33px;
+
+  font-family: "New York Small", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  color: black;
+}
+
+.nav a:hover {
+  text-decoration-thickness: 3px;
+  text-underline-offset: 85px;
+  font-weight: 600;
+}
+.nav a.line {
+  position: relative;
+}
+
+/* Dòng gạch sát đáy header */
+.nav a.line::after {
+  content: "";
+  position: absolute;
+  bottom: -52px; /* Điều chỉnh cho sát đáy header (vì padding-top: 52px) */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+/* --------------Banner------------------ */
+.banner-container {
+  margin: 52px auto 0;
+}
+
+.banner-title {
+  width: 858px;
+  height: 162px;
+  margin: 0 auto 0;
+  text-align: center; /* Căn giữa nội dung text */
+}
+
+.banner-title .title {
+  color: #000000;
+  font-family: "New York Extra Large", serif;
+  font-size: 54px;
+  font-weight: 650;
+  line-height: 100%;
+  text-align: center;
+}
+
+.banner-subtitle {
+  width: 626px;
+  height: 68px;
+  margin: 32px auto 0;
+  text-align: center; /* Căn giữa nội dung text */
+}
+.banner-subtitle .subtitle {
+  font-family: "SF Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  margin-top: 52px;
+}
+
+.divider {
+  width: 640px;
+  height: 0;
+  border-top: 2px solid #000000;
+  margin: 32px auto; /* căn giữa nếu cần */
+}
+
+.main-content {
+  margin: 22px auto;
+}
+
+.author-container {
+  width: 640px;
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-infor {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Khoảng cách giữa ảnh và tên tác giả */
+}
+
+.author-avatar {
+  height: 56px;
+  width: 56px;
+}
+
+.author-name {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 7%;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.publish-date {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.share-buttons {
+  display: flex;
+}
+
+.share-button {
+  width: 74px;
+  height: 44px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.main-text {
+  font-family: "New York Medium";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0%;
+}
+
+.text-block {
+  width: 100%;
+  max-width: 640px;
+
+  margin: 52px auto 0;
+}
+
+.text-block-2 {
+  max-width: 640px;
+  width: 100%;
+  margin: 75px auto 0;
+}
+
+.main-heading {
+  width: 100%;
+  max-width: 640px;
+  margin: 57px auto 0;
+  text-align: left; /* hoặc center nếu muốn căn giữa */
+}
+
+.text-heading {
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.article-img {
+  width: 100%;
+  max-width: 854px;
+  height: auto;
+  margin: 52px auto;
+  text-align: center;
+}
+
+.article-img img {
+  width: 854px;
+  height: 570px;
+  object-fit: cover;
+}
+
+.article-img figcaption {
+  margin: 10px auto;
+  width: 450px;
+  height: 44px;
+}
+
+.text-caption {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 16px; /* Tăng khoảng cách giữa đoạn text phía trên và danh sách */
+}
+
+ul li::before {
+  content: "♦";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+}
+
+ul li {
+  margin-top: 14px; /* Khoảng cách giữa các item */
+}
+
+.Author-bio {
+  margin: 0 auto;
+
+  align-items: center;
+}
+
+.divider-bio {
+  width: 640px;
+  height: 0;
+  border-top: 1px dashed #000000;
+  margin: 32px auto; /* căn giữa nếu cần */
+}
+
+.share-button-container {
+  display: flex;
+  margin: 30px auto 0;
+  width: 640px;
+}
+
+.button-facebook,
+.button-twitter {
+  flex: 1;
+  height: 64px;
+  display: flex;
+  border: 1px solid #eaeaea;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.facebook-icon,
+.twitter-icon {
+  margin-right: 16px;
+}
+
+.share-buttons-mobile {
+  display: none; /* Ẩn trên desktop */
+}
+
+.share-buttons-desktop {
+  display: flex; /* Hiển thị trên desktop */
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tags {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  width: 640px; /* Cùng độ rộng với share buttons */
+  margin: 24px auto 0; /* Căn giữa theo container */
+  text-align: left; /* Căn trái nội dung */
+}
+
+.tags a,
+.tags span {
+  color: #000;
+  text-decoration: underline;
+  margin-right: 4px; /* nhẹ nhàng tạo khoảng cách giữa các link */
+}
+
+.author-bio {
+  display: flex;
+  margin: 30px auto 0;
+  width: 600px;
+}
+
+.author-avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 1.5rem;
+}
+
+.author-bio p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 5%;
+}
+
+.divider-logo {
+  position: relative;
+  width: 100%; /* hoặc max-width cố định nếu cần */
+  height: 32px; /* đủ cao để chứa icon */
+  margin-top: 132px; /* khoảng cách trên/dưới */
+}
+
+.divider-eye {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.eye-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; /* nếu muốn che đường kẻ sau lưng */
+  z-index: 2;
+  /* tạo khoảng che để không bị đè lên */
+}
+
+.read-next {
+  width: 100%;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading {
+  font-family: "New York Extra Large", serif;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.article-grid {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.article-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 304px;
+}
+
+.card-img {
+  max-width: 304px;
+  width: 100%;
+  height: 176px;
+  object-fit: cover;
+}
+
+.article-title {
+  width: 282px;
+  height: auto;
+  margin-top: 16px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.article-card h3 {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Newsletter signup styles */
+.newsletter-signup {
+  max-width: 640px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.newsletter-content {
+  border: 1px solid #000;
+  padding: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.newsletter-content::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: #000;
+}
+
+.newsletter-content h2 {
+  font-family: "New York Extra Large", "Helvetica", serif;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.newsletter-content p {
+  font-family: "SF Pro Text", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.newsletter-content form {
+  display: flex;
+}
+
+.newsletter-content input {
+  flex-grow: 1;
+  height: 54px;
+  border: 1px solid #000;
+  padding: 0 1rem;
+  font-size: 20px;
+}
+
+.newsletter-content button {
+  width: 139px;
+  height: 54px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 464px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0 32px;
+  overflow: hidden; /* Đảm bảo không bị tràn */
+}
+
+.footer-top .footer-img-desktop {
+  width: 100%;
+  max-width: 1556px; /* Giới hạn max nếu cần */
+  height: 28px;
+  margin: 0 auto 105px;
+  display: block;
+  object-fit: cover; /* Cắt đều 2 bên */
+}
+
+.footerlogo {
+  width: 290px;
+}
+
+.footer-middle .footer-text {
+  max-width: 488px;
+  width: 100%;
+  margin: 20px auto 0;
+  font-family: "New York Small", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+  height: auto;
+}
+
+.footer-middle .social-links {
+  margin: 50px auto 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+}
+
+.footer-middle .social-links a {
+  color: #fff;
+  font-family: SF Pro Text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+
+  text-decoration-thickness: 0%;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.share-button-container-mobile {
+  display: none; /* Ẩn trên desktop */
+}
+
+.share-text {
+  display: none;
+}
+
+.sub-block {
+  width: 100%;
+  max-width: 640px;
+  margin: 52px auto 0;
+  display: none;
+}
+
+/* --------------Responsive--------------- */
+
+.hamburger {
+  display: none;
+}
+
+.footer-top .footer-img-mobile {
+  display: none;
+}
+
+/* Tablet */
+
+@media (max-width: 976px) {
+  .header .logo .logoheader {
+    width: 280px;
+    height: 30px;
+  }
+
+  .header-content {
+    padding: 52px 33px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .banner-title {
+    max-width: 700px;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet-Mobile */
+
+@media (max-width: 768px) {
+  .banner-title {
+    width: 600px;
+    height: 100px;
+  }
+
+  .banner-title .title {
+    font-size: 44px;
+    font-weight: 650;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .banner-subtitle {
+    width: 526px;
+    height: 68px;
+    margin: 62px auto 0;
+  }
+  .banner-subtitle .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 0%;
+  }
+
+  .footerlogo {
+    width: 200px;
+  }
+
+  .footer-middle .footer-text {
+    font-size: 14px;
+    padding: 0 20px; /* Thêm padding để tránh chữ sát mép */
+  }
+
+  .footer-middle .social-links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header .logo .logoheader {
+    width: 200px;
+    height: 20px;
+  }
+
+  .header-content {
+    padding: 52px 23px;
+  }
+
+  .banner-title {
+    /* width: 100%;
+    height: auto;
+    margin: 0 auto; */
+    width: 480px;
+    height: 100px;
+  }
+
+  .banner-title .title {
+    font-size: 36px;
+    font-weight: 650;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .banner-subtitle {
+    width: 380px;
+    height: 68px;
+    margin: 35px auto -20px;
+  }
+
+  .banner-subtitle .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .author-container {
+    flex-direction: column;
+    align-items: flex-start; /* Biểu diễn theo hàng dọc */
+  }
+
+  .share-buttons-desktop {
+    display: none;
+  }
+
+  .divider {
+    width: 90%;
+  }
+
+  .author-container {
+    width: 90%;
+  }
+
+  .share-buttons-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 22px auto 0;
+  }
+
+  .share-button {
+    width: 100%;
+    margin: 0 auto;
+    height: 64px;
+  }
+
+  .text-block,
+  .sub-block,
+  .text-block-2,
+  .main-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Author-bio {
+    margin-top: 50px;
+  }
+
+  .share-button-container {
+    display: none; /* Ẩn trên mobile */
+  }
+
+  .share-text,
+  .share-button-container-mobile,
+  .author-bio,
+  .tags {
+    padding: 0 20px;
+  }
+
+  .share-button-container-mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    height: 54px;
+    margin: 22px auto 0;
+  }
+
+  .share-text {
+    display: block;
+    font-family: "SF Pro Text", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .divider-bio {
+    width: 90%;
+  }
+
+  .author-bio {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr; /* Chỉ một cột */
+    gap: 30px; /* Khoảng cách giữa các bài viết */
+  }
+
+  .article-card:nth-child(n + 4) {
+    display: none;
+  }
+
+  .card-img {
+    max-width: 335px;
+    width: 100%;
+    height: 194px;
+    object-fit: cover;
+  }
+
+  .article-title {
+    width: 282px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .newsletter-content h2 {
+    font-size: 30px;
+  }
+
+  .newsletter-content p {
+    font-size: 16px;
+  }
+
+  .newsletter-content input {
+    max-width: 283px;
+    width: 100%;
+
+    font-size: 16px;
+  }
+
+  .newsletter-content button {
+    max-width: 108px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .footer-middle .footer-text {
+    max-width: 308px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 490px) {
+  .banner-title {
+    /* width: 100%;
+    height: auto;
+    margin: 0 auto; */
+    width: 350px;
+    height: 100px;
+  }
+
+  .banner-title .title {
+    font-size: 36px;
+    font-weight: 650;
+  }
+
+  .banner-subtitle {
+    width: 326px;
+    height: 68px;
+    margin: 60px auto -20px;
+  }
+
+  .article-img figcaption {
+    margin: 10px auto;
+    width: 335px;
+    height: 36px;
+  }
+
+  .text-caption {
+    font-size: 13px;
+  }
+
+  .banner-subtitle .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .footer-text {
+    width: 287;
+  }
+  .footer-text p {
+    font-size: 13px;
+  }
+
+  .text-block {
+    display: none;
+  }
+
+  .sub-block {
+    display: block;
+  }
+}
